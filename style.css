@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+
   .navbar{
     height: 50px;
     background-color: rgb(191, 214, 223);
@@ -346,4 +348,137 @@ width: 80%;
   padding-top: 40px;
  
   margin: 0 auto; 
+}
+/* 🔥 Responsive Code Start */
+@media (max-width: 768px) {
+  .navdiv {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .navh3 {
+    padding-left: 0;
+  }
+
+  .navP {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navsign {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbtn {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .heroh3,
+  .herop {
+    width: 90%;
+    font-size: 28px;
+  }
+
+  .startBtn,
+  .demoBtn {
+    width: 90%;
+    max-width: 250px;
+    margin-bottom: 10px;
+  }
+
+  .serviceCard {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card {
+    width: 90% !important;
+    max-width: 320px;
+  }
+
+  .product-lunch {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .proimg {
+    width: 100%;
+    height: auto;
+  }
+
+  .proDetail {
+    width: 90%;
+    text-align: center;
+  }
+
+  .pro {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .imgdiv {
+    width: 90%;
+  }
+}
+/* 🔥 Responsive Code End */
+.navdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ✨ Hamburger Styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+/* ✨ Mobile Nav Links Hide/Show */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navsign {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
 }
