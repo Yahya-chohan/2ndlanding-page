@@ -18,6 +18,13 @@
     font-size: 20px;
     text-align: center;
   }
+  .navh3 :hover{
+    transition: transform 2s ease;
+    /* transform: rotate(360deg); */
+    transform: rotateY(360deg);
+    transform-style: preserve-3d;
+    display: inline-block;
+  }
   .navP{
     display: flex;
     gap: 29px ;
@@ -117,7 +124,7 @@
     color: rgb(0, 121, 158);
   }
   .serviceCard{
-  gap: 40px;  
+  gap: 80px;  
  display: flex;
 padding-top: 20px; 
 justify-content: center;
@@ -127,18 +134,26 @@ align-items: center;
   .product-lunch{
     display: flex;
     padding-top: 50px;
+    padding-bottom: 60px;
    gap: 50px;
-    justify-content: center;
+   justify-content: center;
+    align-items: center;
+   
+width: 80%;
    
   }.proimg{
-    width:500px;
+    width:440px;
     height: 280px;
+    border-radius: 5px;
+  
   }
   .proDetail{
+
+  width: 50%;
   
-  width: 40%;
-   align-items: center;
-   
+
+
+
   }
   .pro{
     width: 180px;
@@ -146,9 +161,189 @@ align-items: center;
     color: rgb(241, 249, 255);
     border-radius: 5px;
     
-  }.imgdiv{
-  width: 40%;
+    
+  }
+    .imgdiv{ 
+  width: 35%;
+
+  
   }
   .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-9px);
   }
+
+
+
+  .payment-card {
+    text-align: center;
+    padding-top: 40px;
+    width: 50%;
+    margin: 0 auto; /* ✅ This centers it horizontally */
+  }
+  
+  /* chatgpt */
+
+
+  .pricing-container {
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;   
+    align-items: center; 
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .pricing-card {
+    background: #fff;
+    border: 2px solid #e0e0e0;  /* ✅ Border added */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+   
+    background-color: #f9f9f9
+  }
+  .pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: #007BFF;  /* 💡 Border color changes on hover */
+    transform: translateY(-10px);
+  border-color: #007BFF;
+  background-color: rgb(0, 121, 158);  /* 🌑 Dark background */
+  color: white;
+  }
+
+
+  .pricing-card:hover {
+    transform: translateY(-10px);
+  }
+
+  .card-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .card-desc {
+    font-size: 14px;
+    color: #030303;
+    margin-bottom: 15px;
+  }
+
+  .price {
+    font-size: 22px;
+    color: #fbfcfd;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .feature-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .feature-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .feature-list li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: green;
+  }
+  .upgrade-btn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .upgrade-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+/* answer box  */
+.qa-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.qa-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.question {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.answer {
+  display: none;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.qa-box.open .answer {
+  display: block;
+}
+
+.qa-box.open .arrow {
+  transform: rotate(180deg); /* Rotate arrow when open */
+}
+@media (max-width: 768px) {
+  .qa-container {
+    width: 90%;
+  }
+  .question {
+    font-size: 16px;
+  }
+  .answer {
+    font-size: 14px;
+  }
+}
+/* Hover effect on box */
+.qa-box:hover {
+  background-color: rgb(0, 121, 158);  /* Light grey on hover */
+}
+
+/* Rotate arrow when box is opened */
+.qa-box.open .arrow {
+  transform: rotate(90deg); /* Rotate arrow on open */
+}
+.qadetail{
+  text-align: center;
+  padding-top: 40px;
+ 
+  margin: 0 auto; 
+}
